@@ -26,19 +26,30 @@ body {
   padding: 10px 32px;
 }
 
+/* ===== LOGO FIX ===== */
 .logo-img {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .logo-img img {
-  width: 120px;
-  height: 48px;
+  width: 300px;       /* increased from 120px */
+  height: 150px;       /* increased from 48px */
   object-fit: contain;
+  display: block;
 }
 
-.ServiceDiv1, .ServiceDiv2 {
+/* If using an SVG Airbnb wordmark, ensure it's not clipped */
+.logo-img svg {
+  width: 160px;
+  height: 56px;
+}
+
+/* ===== NAV ===== */
+.ServiceDiv1,
+.ServiceDiv2 {
   display: flex;
   gap: 20px;
   justify-content: center;
@@ -52,7 +63,7 @@ body {
   white-space: nowrap;
 }
 
-/* Hamburger — hidden on desktop */
+/* ===== HAMBURGER ===== */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -61,11 +72,12 @@ body {
   background: none;
   border: none;
   padding: 4px;
+  flex-shrink: 0;
 }
 
 .hamburger span {
   display: block;
-  width: 22px;
+  width: 24px;
   height: 2px;
   background: #222;
   border-radius: 2px;
@@ -76,7 +88,7 @@ body {
 .hamburger.open span:nth-child(2) { opacity: 0; }
 .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* Mobile menu */
+/* ===== MOBILE MENU ===== */
 .mobile-menu {
   display: none;
   flex-direction: column;
@@ -137,6 +149,7 @@ body {
 
 .SelectCity input::placeholder { color: #aaaaaa; }
 
+/* ===== DROPDOWN ===== */
 .dropdown {
   position: absolute;
   top: calc(100% + 10px);
@@ -197,9 +210,7 @@ body {
   white-space: nowrap;
 }
 
-.DateRange button:hover {
-  border-color: #222222;
-}
+.DateRange button:hover { border-color: #222222; }
 
 .showcallendar {
   position: absolute;
@@ -220,24 +231,156 @@ body {
 }
 .rdrDay { width: auto !important; }
 
-
-.BodyDiv1{
+/* ===== BODY ===== */
+.BodyDiv1 {
   width: 100%;
-  background-color: aqua;
   height: auto;
+  margin-top: 20px;
+  padding: 10px;
 }
 
-.card{
-  width: 100%;
-  background-color: purple;
+/* ===== CARD WRAP ===== */
+.card-wrap {
   display: flex;
+  height: auto;
+  margin-top: 30px;
+  width: 100%;
+  padding: 10px;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width:none;
 }
 
+/* Hide scrollbar on mobile for cleaner look */
+.card-wrap::-webkit-scrollbar {
+  height: 4px;
+}
+.card-wrap::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 4px;
+}
 
+/* ===== CARD ===== */
+.cardData{
+  margin-top: 20px;
+}
 
+.cardData p{
+  font-weight: bold;
+}
 
+.card {
+  flex: 0 0 auto;         /* don't shrink; allow horizontal scroll */
+  width: 182px;           /* match image width */
+}
 
-/* ===== TABLET (≤ 768px) ===== */
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.rating {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border-radius: 20px;
+  padding: 3px 8px 3px 6px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  backdrop-filter: blur(4px);
+}
+
+.rating .star {
+  color: #FFD55A;
+  font-size: 11px;
+  line-height: 1;
+}
+
+.image img {
+  width: 100%;
+  height: 173px;
+  border-radius: 10px;
+  object-fit: cover;      /* prevents stretching */
+  display: block;
+}
+
+.card-title {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  color: grey;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.card-price {
+  display: flex;
+  align-items: center;
+  color: grey;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+/* ===========================
+   RESPONSIVE BREAKPOINTS
+   =========================== */
+
+/* ===== LARGE DESKTOP (≥ 1200px) ===== */
+@media (min-width: 1200px) {
+  .InnerDiv1 {
+    padding: 12px 48px;
+  }
+
+  .HeaderDiv2 {
+    padding: 14px 48px;
+    gap: 16px;
+  }
+
+  .logo-img img {
+    width: 180px;
+    height: 62px;
+  }
+
+  .SelectCity {
+    width: 300px;
+  }
+}
+
+/* ===== TABLET LANDSCAPE (769px – 1024px) ===== */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .ServiceDiv1,
+  .ServiceDiv2 {
+    gap: 14px;
+  }
+
+  .nav-item {
+    font-size: 13px;
+  }
+
+  .SelectCity {
+    width: 220px;
+  }
+
+  .logo-img img {
+    width: 150px;
+    height: 52px;
+  }
+}
+
+/* ===== TABLET PORTRAIT (≤ 768px) ===== */
 @media (max-width: 768px) {
   .ServiceDiv1,
   .ServiceDiv2 {
@@ -250,6 +393,11 @@ body {
 
   .InnerDiv1 {
     padding: 10px 20px;
+  }
+
+  .logo-img img {
+    width: 140px;
+    height: 50px;
   }
 
   .HeaderDiv2 {
@@ -275,13 +423,26 @@ body {
     left: 50%;
     transform: translateX(-50%);
   }
+
+  /* Make cards slightly wider on tablet for better readability */
+  .card {
+    width: 200px;
+  }
+
+  .image img {
+    height: 190px;
+  }
 }
 
 /* ===== MOBILE (≤ 480px) ===== */
 @media (max-width: 480px) {
   .logo-img img {
-    width: 120px;
-    height: 42px;
+    width: 130px;
+    height: 46px;
+  }
+
+  .InnerDiv1 {
+    padding: 10px 16px;
   }
 
   .HeaderDiv2 {
@@ -313,6 +474,20 @@ body {
   .rdrMonth {
     width: 100% !important;
   }
+
+  /* Cards fill more width on small screens */
+  .card-wrap {
+    padding: 8px;
+    gap: 14px;
+  }
+
+  .card {
+    width: 160px;
+  }
+
+  .image img {
+    height: 155px;
+  }
 }
 
 /* ===== SMALL MOBILE (≤ 360px) ===== */
@@ -322,7 +497,7 @@ body {
   }
 
   .logo-img img {
-    width: 120px;
+    width: 115px;
     height: 42px;
   }
 
@@ -335,6 +510,37 @@ body {
     font-size: 13px;
     height: 40px;
   }
+
+  .card {
+    width: 145px;
+  }
+
+  .image img {
+    height: 140px;
+  }
+
+  .card-title,
+  .card-price {
+    font-size: 12px;
+  }
 }
 
+/* ===== ULTRA-SMALL (≤ 320px) ===== */
+@media (max-width: 320px) {
+  .logo-img img {
+    width: 100px;
+    height: 36px;
+  }
 
+  .InnerDiv1 {
+    padding: 8px 10px;
+  }
+
+  .card {
+    width: 130px;
+  }
+
+  .image img {
+    height: 125px;
+  }
+}
