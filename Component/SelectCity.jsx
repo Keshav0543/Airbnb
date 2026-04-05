@@ -7,7 +7,8 @@ function CityDropDown() {
   const [city, setCity] = useState("");
   const [show, setShow] = useState(false);
 
-  // ✅ FIX 1: array of object
+  // eedhar DateRange ko array list chahiaye hota ha na ki object kyuki ek sath bohot sare state ho saktehain or
+    // har state ke alag alag key 
   const [date, setdate] = useState([
     {
       startDate: new Date(),

@@ -220,6 +220,23 @@ body {
 }
 .rdrDay { width: auto !important; }
 
+
+.BodyDiv1{
+  width: 100%;
+  background-color: aqua;
+  height: auto;
+}
+
+.card{
+  width: 100%;
+  background-color: purple;
+  display: flex;
+}
+
+
+
+
+
 /* ===== TABLET (≤ 768px) ===== */
 @media (max-width: 768px) {
   .ServiceDiv1,
@@ -263,8 +280,8 @@ body {
 /* ===== MOBILE (≤ 480px) ===== */
 @media (max-width: 480px) {
   .logo-img img {
-    width: 90px;
-    height: 36px;
+    width: 120px;
+    height: 42px;
   }
 
   .HeaderDiv2 {
@@ -305,8 +322,8 @@ body {
   }
 
   .logo-img img {
-    width: 75px;
-    height: 30px;
+    width: 120px;
+    height: 42px;
   }
 
   .HeaderDiv2 {
@@ -319,3 +336,5 @@ body {
     height: 40px;
   }
 }
+
+
