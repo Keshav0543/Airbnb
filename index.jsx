@@ -5,14 +5,25 @@ import ReactDOM from "react-dom/client";
 import Header from "./Component/header.jsx";
 import Body from './Component/Body.jsx';
 import Brain from './Component/CustomHook.jsx';
+import HotelSelect from './Component/HotelSelection.jsx';
+import { BrowserRouter , Route , Routes} from 'react-router';
 
 function App(){
-const cityData=Brain();
-console.log("FULL DATA:", cityData);
+const {Data1, Data2}=Brain();
+
     return(
         <>
+        <BrowserRouter>
         <Header/>
-        <Body cityData={cityData}/>
+
+        <Routes>
+            <Route path='/' element={<Body cityData={Data1}/>}></Route>
+        </Routes>
+
+        <Routes>
+            <Route path="/rooms/:id" element={<HotelSelect roomData={Data2}/>}></Route>
+        </Routes>
+        </BrowserRouter>
         </>
     )
 }

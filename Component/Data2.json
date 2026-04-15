@@ -1,0 +1,100 @@
+{
+  "id": "JAI-0001",
+  "listing_id": "1627472477883131411",
+  "title": "Saiwal's Home | Walk to Airport & Phoenix Mall",
+  "property_type": "Entire home",
+  "location": "Pune City, Maharashtra, India",
+  "url": "https://www.airbnb.co.in/rooms/1627472477883131411",
+
+  "images": [
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1627472477883131411/original/5917c43b-3047-4690-9141-335e5c7111dc.jpeg",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1627472477883131411/original/f0c3a86b-9473-4d14-a0fe-e4d2ce2999e0.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1627472477883131411/original/4294b44d-391a-439a-af11-0073b8a2acff.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1627472477883131411/original/58c0698e-52b9-43c4-b9c0-82f52482904a.jpeg?im_w=720",
+    "https://a0.muscache.com/im/pictures/hosting/Hosting-1627472477883131411/original/ae1d4e28-c4e2-466a-b814-cfc4b4a3151a.jpeg?im_w=720"
+  ],
+
+  "rating": 4.85,
+  "review_count": 13,
+  "badge": "Guest favourite",
+
+  "price": {
+    "total": "₹10,613",
+    "per_night": "₹5,306.48",
+    "nights": 2,
+    "qualifier": "For 2 nights"
+  },
+
+  "checkin": "2026-04-17",
+  "checkout": "2026-04-19",
+
+  "capacity": {
+    "max_guests": 4,
+    "bedrooms": 2,
+    "beds": 2,
+    "bathrooms": 3
+  },
+
+  "host": {
+    "name": "Bhupendra",
+    "is_superhost": true,
+    "hosting_duration": "4 months",
+    "avatar_url": "https://a0.muscache.com/im/pictures/user/User/original/879bc0ee-bec5-4ae5-88a9-844b275595e1.jpeg"
+  },
+
+  "ratings_breakdown": {
+    "accuracy": 4.92,
+    "checkin": 4.92,
+    "cleanliness": 4.92,
+    "communication": 4.92,
+    "location": 4.92,
+    "value": 4.85,
+    "overall": 4.85
+  },
+
+  "availability": true,
+  "can_instant_book": false,
+  "is_rare_find": true,
+
+  "cancellation_policy": {
+    "type": "Flexible",
+    "summary": "Free cancellation before 2:00 pm on 16 April. Cancel before check-in on 17 April for a partial refund.",
+    "milestones": [
+      {
+        "deadline": "16 Apr, 2:00 pm",
+        "refund_type": "Full refund",
+        "refund_term": "Get back 100% of what you paid."
+      },
+      {
+        "deadline": "17 Apr, 2:00 pm",
+        "refund_type": "Partial refund",
+        "refund_term": "Get back every night but the first one. No refund of the first night or the service fee."
+      }
+    ]
+  },
+
+  "house_rules": {
+    "checkin_after": "2:00 pm",
+    "checkout_before": "11:00 am",
+    "max_guests": 4,
+    "pets_allowed": false,
+    "smoking_allowed": false,
+    "parties_allowed": false,
+    "quiet_hours": "11:00 pm - 7:00 am",
+    "self_checkin": true,
+    "self_checkin_method": "Smart lock",
+    "commercial_photography_allowed": true
+  },
+
+  "safety_info": {
+    "carbon_monoxide_alarm": false,
+    "smoke_alarm": false,
+    "exterior_security_cameras": true,
+    "camera_note": "Security cameras cover entire place from outside"
+  },
+
+  "checkout_instructions": [
+    "Turn things off",
+    "Lock up"
+  ]
+}

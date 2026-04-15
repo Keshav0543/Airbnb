@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 function Body(props) {
 
     const citywise = props?.cityData?.cities;
@@ -10,7 +12,8 @@ function Body(props) {
 
                         <div className="card-wrap">
                             {city.listings.map((item, i) =>
-                                <div className="card" key={i}>
+                                <Link to={`/rooms/${encodeURIComponent(item.id)}`} key={i}>
+                                <div className="card">
                                     <div className="image">
                                         <img src={item.image_url} alt="Property-img"></img>
                                         <div className="rating">
@@ -26,6 +29,7 @@ function Body(props) {
                                         <p>{item.price}{" "}{item.price_qualifier}</p>
                                     </div>
                                 </div>
+                                </Link>
                             )}
                         </div>
 
