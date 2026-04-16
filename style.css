@@ -774,3 +774,54 @@ body {
     margin: 0 4px;
   }
 }
+
+.Slant-line {
+  width: 100%;
+  height: 2px;
+  background-color: rgb(231, 229, 229);
+  margin : 12px auto;
+}
+
+
+.Roomwrap{
+width: 100%;
+height: auto;
+}
+
+
+.Host-info{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: auto;
+}
+
+
+.HostImg{
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgb(241, 239, 239);
+  border-radius: 50%;
+}
+
+.HostImg img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.Host-Name{
+  background-color: palegoldenrod;
+}
+
+
+
+.Host-year{
+  display: flex;
+  background-color: #555;
+  align-items: center;
+  margin-left: 50px;
+  height: auto;
+}

@@ -83,6 +83,25 @@ function HotelSelect({ roomData }) {
                     </div>
                 )}
 
+
+            <div className="Slant-line"></div>
+
+            <div className="Roomwrap">
+              <div className="Host-info">
+                <div className="HostImg">
+                    <img src={roomData?.host.avatar_url} alt="Host-img"/>
+                </div>
+
+                <div className="Host-Name">
+                    <p>{`Hosted By ${roomData?.host.name}`}</p>
+                </div>
+            </div>
+
+            
+                <div className="Host-year">
+                    <p>{`SuperHost-${roomData?.host.hosting_duration} hosting`}</p>
+                </div>
+            </div>
             </div>
         </>
     )
