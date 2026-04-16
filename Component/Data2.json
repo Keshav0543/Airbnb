@@ -16,7 +16,7 @@
 
   "rating": 4.85,
   "review_count": 13,
-  "badge": "Guest favourite",
+  "badge": true,
 
   "price": {
     "total": "₹10,613",
