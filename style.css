@@ -732,3 +732,45 @@ body {
     padding-top: 12px;
   }
 }
+
+.Room-rating {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* 👈 helps on small screens */
+  gap: 6px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Circular', 'Helvetica Neue', sans-serif;
+}
+
+/* ⭐ Rating */
+.Rating {
+  font-size: 14px;
+  font-weight: 600;
+  color: #222222;
+  display: flex;
+  align-items: center;
+}
+
+/* | separator */
+.Rating::after {
+  content: "·";
+  margin: 0 6px;
+  color: #717171;
+}
+
+/* 📝 Reviews */
+.Reviews {
+  font-size: 14px;
+  color: #717171;
+}
+
+/* 📱 Mobile optimization */
+@media (max-width: 480px) {
+  .Room-rating {
+    font-size: 13px;
+    gap: 4px;
+  }
+
+  .Rating::after {
+    margin: 0 4px;
+  }
+}

@@ -74,6 +74,15 @@ function HotelSelect({ roomData }) {
                     </div>
                 )}
 
+                {!istrue && (
+                    <div className="Room-rating">
+                        <div className="Rating">{`✰ ${roomData?.rating}`}</div>
+                        <div className="Reviews">
+                            {`${roomData?.review_count} Reviews`}
+                        </div>
+                    </div>
+                )}
+
             </div>
         </>
     )
