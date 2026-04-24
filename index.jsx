@@ -9,7 +9,7 @@ import HotelSelect from './Component/HotelSelection.jsx';
 import { BrowserRouter , Route , Routes} from 'react-router';
 
 function App(){
-const {Data1, Data2}=Brain();
+const {Data1, Data2 , setshowAmen ,showAmen ,modelref}=Brain();
 
     return(
         <>
@@ -21,7 +21,7 @@ const {Data1, Data2}=Brain();
         </Routes>
 
         <Routes>
-            <Route path="/rooms/:id" element={<HotelSelect roomData={Data2}/>}></Route>
+            <Route path="/rooms/:id" element={<HotelSelect roomData={Data2} setshowAmen={setshowAmen} showAmen={showAmen} modelref={modelref}/>}></Route>
         </Routes>
         </BrowserRouter>
         </>

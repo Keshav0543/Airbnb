@@ -56,6 +56,51 @@
   "can_instant_book": false,
   "is_rare_find": true,
 
+  "amenities": {
+    "bathroom": [
+      { "name": "Hot water", "icon": "shower" },
+      { "name": "Shampoo", "icon": "bottle" },
+      { "name": "Body soap", "icon": "soap" },
+      { "name": "Towels", "icon": "towel" },
+      { "name": "Toilet paper", "icon": "roll" },
+      { "name": "Hair dryer", "icon": "dryer" }
+    ],
+    "bedroom": [
+      { "name": "Bed linens", "icon": "bed" },
+      { "name": "Extra pillows & blankets", "icon": "pillows" },
+      { "name": "Wardrobe", "icon": "closet" },
+      { "name": "Hangers", "icon": "hanger" },
+      { "name": "Room-darkening shades", "icon": "blinds" }
+    ],
+    "entertainment": [
+      { "name": "Smart TV", "icon": "tv" },
+      { "name": "Netflix", "icon": "netflix" },
+      { "name": "WiFi", "icon": "wifi" },
+      { "name": "Board games", "icon": "game" }
+    ],
+    "kitchen": [
+      { "name": "Refrigerator", "icon": "fridge" },
+      { "name": "Microwave", "icon": "microwave" },
+      { "name": "Gas stove", "icon": "stove" },
+      { "name": "Cooking basics", "icon": "utensils" },
+      { "name": "Electric kettle", "icon": "kettle" }
+    ],
+    "essentials": [
+      { "name": "Air conditioning", "icon": "ac" },
+      { "name": "Fan", "icon": "fan" },
+      { "name": "Washing machine", "icon": "washer" },
+      { "name": "Iron", "icon": "iron" },
+      { "name": "Dedicated workspace", "icon": "desk" }
+    ],
+    "outdoor": [
+      { "name": "Balcony", "icon": "balcony" },
+      { "name": "Outdoor seating", "icon": "chair" }
+    ],
+    "parking": [
+      { "name": "Free parking on premises", "icon": "parking" }
+    ]
+  },
+
   "cancellation_policy": {
     "type": "Flexible",
     "summary": "Free cancellation before 2:00 pm on 16 April. Cancel before check-in on 17 April for a partial refund.",
